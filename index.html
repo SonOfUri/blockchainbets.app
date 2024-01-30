@@ -23,6 +23,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
         .font-family-raleway {
             font-family: 'Open Sans', sans-serif !important;
@@ -445,13 +448,14 @@
         </picture>
         <section class="hero relative pt-32 pb-12 md:pt-40">
             <div class="container flex-col">
-                <div class="mx-auto text-center">
-                    <h1 class="font-display text-5xl text-white text-content lg:text-7xl banner-heading"><span class="inline-block lg:pr-32 font-family-raleway">WELCOME TO</span> <span class="sm:hidden"><br></span>
+                <div class="mx-auto text-center" >
+                    <h1     data-aos="fade-up" 
+                     class="font-display text-5xl text-white text-content lg:text-7xl banner-heading"><span class="inline-block lg:pr-32 font-family-raleway">WELCOME TO</span> <span class="sm:hidden"><br></span>
                         <br> <span class="inline-block lg:pl-32 font-family-raleway font-bold">BITCINO</span></h1>
                     <p class="mx-auto font-display mb-4 max-w-xl text-lg leading-normal text-jacarta-50 hidden" style="color: #7780A1">
                         The people’s betting platform
                     </p>
-                    <p class="mx-auto font-display mt-4 mb-4 max-w-xl text-lg leading-normal text-jacarta-50" style="color: #7780A1">
+                    <p    data-aos="fade-down" class="mx-auto font-display mt-4 mb-4 max-w-xl text-lg leading-normal text-jacarta-50" style="color: #7780A1">
                         The one stop decentralized sports betting & online casino platform. Play your favorite games and win big.
 
                     </p>
@@ -469,10 +473,10 @@
         <!-- Intro Video -->
         <img src="img/LittleCircles.png" alt="" loading="lazy" class="pointer-events-none absolute z-10 animate-fly" style="top: 20%;z-index: -1;" />
         <img src="img/Squares.png" class="pointer-events-none absolute animate-fly" style="top: 20%;z-index: -1;" alt="" />
-        <div class="relative mx-auto max-w-[90rem] container">
+        <div    data-aos="fade-up" class="relative mx-auto max-w-[90rem] container">
             <div class="relative">
                 <figure class="relative overflow-hidden rounded-3xl ">
-                    <a id="explore_games" style="display: flex; justify-content: center;">
+                    <a    data-aos="flip-right" id="explore_games" style="display: flex; justify-content: center;">
             <img src="img/Home.png" class="animate-fly w-full banner-img-1" alt="video" style="width: 70%;" />
             <img src="img/Home-1.png" class="animate-fly bottom-0 banner-img-2"
               style="position: absolute; right: 10%; width: 20%;" alt="video" />
@@ -482,8 +486,8 @@
         </div>
 
         <div class="flex buy-buttons container">
-            <div class="launch-btn buy-btn"><span>Buy</span></div>
-            <div class="launch-btn chat-btn"><span>Chart</span></div>
+            <div    data-aos="fade-right" class="launch-btn buy-btn"><span>Buy</span></div>
+            <div     data-aos="fade-left" class="launch-btn chat-btn"><span>Chart</span></div>
         </div>
         <!-- end intro video -->
 
@@ -505,7 +509,7 @@
         <!-- end characters slider -->
 
         <!-- Statistic / Promo -->
-        <section class="relative" id="win-section">
+        <section class="relative" id="win-section"     data-aos="flip-left">
             <!-- <picture
         class="pointer-events-none absolute inset-0 -z-10 after:absolute after:bottom-0 after:h-1/3 after:w-full after:bg-gradient-to-t after:from-[#010107]">
         <img src="img/gradient_creative.jpg" alt="gradient" class="h-full w-full -scale-y-100" />
@@ -572,7 +576,7 @@
             <div class="container pt-0 sm:pt-32 relative overflow-x-visible overflow-y-visible xl:left-[calc((100vw-1202px)/4)] xl:max-w-[calc(1202px+((100vw-1202px)/2))] xl:pr-[calc((100vw-1176px)/2)]">
                 <div class="container mb-no-padding">
                     <div class="items-center justify-between lg:flex">
-                        <div class="mb-12 lg:w-[45%] lg:pr-16">
+                        <div    data-aos="zoom-in" class="mb-12 lg:w-[45%] lg:pr-16">
                             <a id="tokenometrics">
                                 <h2 class="mb-6 text-left  text-3xl font-medium text-white md:text-5xl" style="color: white ;
                   -webkit-text-fill-color: transparent; -webkit-background-clip: text; ">
@@ -593,7 +597,7 @@
                             <img src="img/tokenomicsGraph.png" loading="lazy" alt="" class="pointer-events-none absolute rounded-lg shadow-desk" style="padding-top: 10rem;" />
 
                             <!-- Slider -->
-                            <div class="swiper-slide">
+                            <div class="swiper-slide"    data-aos="zoom-in-down">
                                 <img src="img/pie.png" alt="" class="animate-fly inline-block rounded-lg" />
                             </div>
                         </div>
@@ -606,10 +610,10 @@
                 <div class="items-center justify-between lg:flex legacy-wrapper">
                     <div class="relative legacy-image text-center lg:w-1/2">
                         <img src="img/wallet.png" alt="" loading="lazy" class="absolute scale-150" />
-                        <img src="img/kislayAssets/wallet.png" alt="" loading="lazy" class="relative -top-10 inline-block animate-fly  rounded-lg" />
+                        <img    data-aos="zoom-out-down" src="img/kislayAssets/wallet.png" alt="" loading="lazy" class="relative -top-10 inline-block animate-fly  rounded-lg" />
                         <!-- <img src="img/hero/3D_elements.png" alt="" loading="lazy" class="absolute top-10 animate-fly" /> -->
                     </div>
-                    <div class="lg:w-[45%] legacy-text lg:pl-16">
+                    <div    data-aos="zoom-out-up" class="lg:w-[45%] legacy-text lg:pl-16">
                         <a id="legacy">
                             <h2 class="mb-6 font-display text-2xl text-white font-family-raleway">
                                 The legacy of $BITC
@@ -635,7 +639,7 @@
             <div class="container">
 
                 <div class="items-center justify-between lg:flex">
-                    <div class="mb-12 lg:w-[45%] lg:pr-16">
+                    <div    data-aos="zoom-in-up" class="mb-12 lg:w-[45%] lg:pr-16">
                         <h2 class="mb-12 font-display text-3xl text-white reflects-text font-family-raleway mb-font-28" style="
        
         ">
@@ -650,7 +654,7 @@
               Create Avatar
             </a>
                     </div>
-                    <div class="relative text-center lg:w-1/2">
+                    <div class="relative text-center lg:w-1/2"    data-aos="zoom-out-right">
                         <img src="img/walletfloatingshadow.png" loading="lazy" alt="" class="pointer-events-none absolute rounded-lg" />
 
                         <!-- Slider -->
@@ -702,7 +706,7 @@
         </section>
         <!-- end promo 2 -->
         <!--Promo 3-->
-        <section class="container ">
+        <section class="container "    data-aos="flip-up">
             <div class="container" style="
         padding: 40px 20px;
         background: linear-gradient(92.98deg, rgba(35, 38, 47, 0.8) 3.54%, rgba(35, 38, 47, 0.56) 93.38%);
@@ -792,7 +796,7 @@
         </div>
       </div> -->
 
-            <div class="container mt-10 md:mt-24 " style="
+            <div    data-aos="flip-right" class="container mt-10 md:mt-24 " style="
         padding: 40px 20px;
         background: linear-gradient(92.98deg, rgba(35, 38, 47, 0.8) 3.54%, rgba(35, 38, 47, 0.56) 93.38%);
         border: 1.30159px solid #353945;
@@ -846,7 +850,7 @@
                 </div>
 
                 <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2 lg:md:grid-cols-4">
-                    <div>
+                    <div    data-aos="flip-up">
                         <div class="rounded-2.5xl h-full" style="padding:24px; min-height: 315px; background: #1E2129;
             box-shadow: 0px 4.81752px 19.2701px rgba(0, 0, 0, 0.25);">
                             <div class="mb-4 md:mb-0">
@@ -866,7 +870,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div    data-aos="flip-down">
                         <div class="rounded-2.5xl h-full" style="padding:24px; min-height: 315px; background: #1E2129;
             box-shadow: 0px 4.81752px 19.2701px rgba(0, 0, 0, 0.25);">
                             <div class="mb-4 md:mb-0">
@@ -893,7 +897,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div    data-aos="flip-down">
                         <div class="rounded-2.5xl h-full" style="padding:24px; min-height: 315px; background: #1E2129;
             box-shadow: 0px 4.81752px 19.2701px rgba(0, 0, 0, 0.25);">
                             <div class="mb-4 md:mb-0">
@@ -914,7 +918,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div    data-aos="flip-up">
                         <div class="rounded-2.5xl h-full" style="padding:24px; min-height: 315px; background: #1E2129;
             box-shadow: 0px 4.81752px 19.2701px rgba(0, 0, 0, 0.25);">
                             <div class="mb-4 md:mb-0">
@@ -1451,6 +1455,9 @@
         $(document).on('click', '.brand-logo.mexc', function() {
             window.open('#', '_blank')
         })
+    </script>
+    <script>
+      AOS.init();
     </script>
 </body>
 
